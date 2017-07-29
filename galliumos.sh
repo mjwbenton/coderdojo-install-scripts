@@ -12,6 +12,8 @@ rm /etc/xdg/autostart/xscreensaver.desktop
 # Add repo ready to install flash and upgrade packages
 add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 yes | apt-get update
+# grub-pc seems to want to install interactively, so upgrade everything else
+apt-mark hold grub-pc
 yes | apt-get upgrade
 
 # Install flash and vim
