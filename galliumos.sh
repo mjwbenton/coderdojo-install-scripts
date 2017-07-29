@@ -1,4 +1,3 @@
-#!/bin/bash
 # Stop xscreensaver from beginning on startup and causing the need to enter password when the laptop lid is reopened
 sudo rm /etc/xdg/autostart/xscreensaver.desktop
 # Install flash
